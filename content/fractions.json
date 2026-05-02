@@ -1,0 +1,233 @@
+{
+  "unit": "fractions",
+  "title": "Fractions",
+  "grade": "3-4",
+  "totalDays": 14,
+  "license": "Inspired by US Common Core 3.NF and 4.NF standards. Problems written from scratch for this app.",
+  "days": [
+    {
+      "day": 1,
+      "concept": {
+        "title": "What is a fraction?",
+        "body": "A fraction is one piece of something split into equal parts.",
+        "visual": "pie",
+        "visualNote": "1/4 of a circle shaded"
+      },
+      "problems": [
+        { "q": "If a pizza is cut into 4 equal slices and you eat 1, what fraction did you eat?", "choices": ["1/2", "1/3", "1/4", "1/5"], "answer": 2, "hint": "Count the total pieces. That's the bottom number." },
+        { "q": "A chocolate bar has 8 equal pieces. You eat 3. What fraction is left?", "choices": ["3/8", "5/8", "8/3", "3/5"], "answer": 1, "hint": "Pieces left = total minus eaten." },
+        { "q": "Which fraction means '2 out of 5 equal parts'?", "choices": ["5/2", "2/5", "2/3", "3/5"], "answer": 1, "hint": "Top: how many you have. Bottom: total." },
+        { "q": "In the fraction 3/7, what does 7 mean?", "choices": ["The pieces you took", "The total equal parts", "Something else", "The leftover"], "answer": 1, "hint": "Bottom number = the total." },
+        { "q": "If a cake is cut into 6 equal pieces and 5 are eaten, what fraction is eaten?", "choices": ["1/6", "5/6", "6/5", "5/1"], "answer": 1, "hint": "Eaten on top, total on bottom." }
+      ]
+    },
+    {
+      "day": 2,
+      "concept": {
+        "title": "Numerator and denominator",
+        "body": "The top number is the numerator (what you have). The bottom is the denominator (the total).",
+        "visual": "label",
+        "visualNote": "3/4 with arrows labeling each part"
+      },
+      "problems": [
+        { "q": "In 5/9, what is the numerator?", "choices": ["5", "9", "4", "14"], "answer": 0, "hint": "Numerator is on top." },
+        { "q": "In 3/8, what is the denominator?", "choices": ["3", "8", "5", "11"], "answer": 1, "hint": "Denominator is on bottom." },
+        { "q": "Write 'four out of seven' as a fraction.", "choices": ["7/4", "4/7", "4/3", "3/4"], "answer": 1, "hint": "Out of = denominator." },
+        { "q": "Which has a denominator of 10?", "choices": ["10/3", "3/10", "10/10", "Both 3/10 and 10/10"], "answer": 3, "hint": "Bottom number must be 10." },
+        { "q": "If you have 2 of 5 cookies, write the fraction.", "choices": ["5/2", "2/5", "2/2", "5/5"], "answer": 1, "hint": "What you have on top." }
+      ]
+    },
+    {
+      "day": 3,
+      "concept": {
+        "title": "Fractions on a number line",
+        "body": "A fraction has a place on the number line, between 0 and 1 (or higher).",
+        "visual": "numberLine",
+        "visualNote": "0 to 1 with marks at 1/4, 2/4, 3/4"
+      },
+      "problems": [
+        { "q": "Where is 1/2 on a 0-to-1 line?", "choices": ["Start", "Middle", "End", "Past 1"], "answer": 1, "hint": "1/2 splits in half." },
+        { "q": "Which is closer to 0: 1/4 or 3/4?", "choices": ["1/4", "3/4", "Same", "Neither"], "answer": 0, "hint": "Smaller numerator = closer to 0." },
+        { "q": "Which fraction is between 0 and 1/2?", "choices": ["3/4", "1/4", "2/2", "5/4"], "answer": 1, "hint": "Smaller than 1/2." },
+        { "q": "On a number line from 0 to 1, where does 3/3 sit?", "choices": ["At 0", "In the middle", "At 1", "Past 1"], "answer": 2, "hint": "3/3 = whole = 1." },
+        { "q": "Where is 5/4 on the number line?", "choices": ["Before 0", "Between 0 and 1", "Past 1", "Exactly at 1"], "answer": 2, "hint": "Top bigger than bottom = past 1." }
+      ]
+    },
+    {
+      "day": 4,
+      "concept": {
+        "title": "Equivalent fractions",
+        "body": "Different fractions can name the same amount. 1/2 and 2/4 are the same.",
+        "visual": "split",
+        "visualNote": "Two pizzas: one cut in 2 with 1 shaded, one cut in 4 with 2 shaded"
+      },
+      "problems": [
+        { "q": "Which is equal to 1/2?", "choices": ["2/3", "2/4", "3/4", "1/4"], "answer": 1, "hint": "Multiply top and bottom by 2." },
+        { "q": "Which is equal to 1/3?", "choices": ["2/4", "2/6", "3/6", "1/4"], "answer": 1, "hint": "Multiply top and bottom by 2." },
+        { "q": "2/4 = ?", "choices": ["1/2", "2/2", "1/4", "4/2"], "answer": 0, "hint": "Divide top and bottom by 2." },
+        { "q": "Which is NOT equal to 1/2?", "choices": ["2/4", "3/6", "4/8", "5/8"], "answer": 3, "hint": "5 is not half of 8." },
+        { "q": "3/6 = ?", "choices": ["1/2", "1/3", "2/3", "3/2"], "answer": 0, "hint": "Divide both by 3." }
+      ]
+    },
+    {
+      "day": 5,
+      "concept": {
+        "title": "Comparing same denominator",
+        "body": "When the bottom is the same, the bigger top wins.",
+        "visual": "compare",
+        "visualNote": "3/8 vs 5/8 with bars"
+      },
+      "problems": [
+        { "q": "Which is bigger: 3/8 or 5/8?", "choices": ["3/8", "5/8", "Same", "Cannot tell"], "answer": 1, "hint": "Bigger top, bigger fraction (same bottom)." },
+        { "q": "Which is smaller: 2/9 or 7/9?", "choices": ["2/9", "7/9", "Same", "Cannot tell"], "answer": 0, "hint": "Smaller top, smaller fraction." },
+        { "q": "4/10 ___ 6/10", "choices": [">", "<", "=", "?"], "answer": 1, "hint": "4 is less than 6." },
+        { "q": "Which is biggest: 1/5, 4/5, 2/5, 3/5?", "choices": ["1/5", "2/5", "3/5", "4/5"], "answer": 3, "hint": "Biggest top wins." },
+        { "q": "Order from smallest: 5/12, 1/12, 9/12", "choices": ["1, 5, 9", "9, 5, 1", "5, 1, 9", "1, 9, 5"], "answer": 0, "hint": "Compare the tops." }
+      ]
+    },
+    {
+      "day": 6,
+      "concept": {
+        "title": "Comparing same numerator",
+        "body": "When the tops are equal, the smaller bottom is bigger. Fewer pieces = bigger pieces.",
+        "visual": "compare",
+        "visualNote": "1/2 vs 1/4 — 1/2 is bigger"
+      },
+      "problems": [
+        { "q": "Which is bigger: 1/3 or 1/6?", "choices": ["1/3", "1/6", "Same", "Cannot tell"], "answer": 0, "hint": "Smaller bottom = bigger pieces." },
+        { "q": "Which is smaller: 2/5 or 2/9?", "choices": ["2/5", "2/9", "Same", "Cannot tell"], "answer": 1, "hint": "Bigger bottom = smaller pieces." },
+        { "q": "3/4 ___ 3/8", "choices": [">", "<", "=", "?"], "answer": 0, "hint": "Smaller bottom = bigger fraction." },
+        { "q": "Which is biggest: 1/10, 1/3, 1/100?", "choices": ["1/10", "1/3", "1/100", "Same"], "answer": 1, "hint": "Smallest bottom wins." },
+        { "q": "5/6 vs 5/12 — which is bigger?", "choices": ["5/6", "5/12", "Same", "Cannot tell"], "answer": 0, "hint": "Smaller bottom." }
+      ]
+    },
+    {
+      "day": 7,
+      "concept": {
+        "title": "Mixed numbers",
+        "body": "A mixed number is a whole and a fraction together. Like 1 1/2 (one and a half).",
+        "visual": "mixed",
+        "visualNote": "1 whole + 1/2 = 1 1/2"
+      },
+      "problems": [
+        { "q": "What does 2 3/4 mean?", "choices": ["2 plus 3/4", "2 times 3/4", "2 minus 3/4", "23/4"], "answer": 0, "hint": "Whole + fraction." },
+        { "q": "1 1/2 is the same as ___", "choices": ["3/2", "1/2", "2/3", "2"], "answer": 0, "hint": "1 = 2/2. Add 1/2 = 3/2." },
+        { "q": "Which is a mixed number?", "choices": ["7/4", "1 3/4", "3/4", "4/4"], "answer": 1, "hint": "Whole and fraction together." },
+        { "q": "2 1/3 = ?", "choices": ["6/3", "5/3", "7/3", "2/3"], "answer": 2, "hint": "2 = 6/3. Add 1/3 = 7/3." },
+        { "q": "5/2 as mixed number?", "choices": ["2 1/2", "1 5/2", "5", "2 5/2"], "answer": 0, "hint": "5 ÷ 2 = 2 with 1 left over." }
+      ]
+    },
+    {
+      "day": 8,
+      "concept": {
+        "title": "Adding same denominator",
+        "body": "Bottoms equal? Just add the tops. Bottom stays the same.",
+        "visual": "addition",
+        "visualNote": "1/4 + 2/4 = 3/4"
+      },
+      "problems": [
+        { "q": "1/5 + 2/5 = ?", "choices": ["3/5", "3/10", "3/25", "2/5"], "answer": 0, "hint": "Add tops, bottom stays." },
+        { "q": "3/8 + 4/8 = ?", "choices": ["7/16", "7/8", "12/8", "1/8"], "answer": 1, "hint": "3+4 = 7." },
+        { "q": "2/6 + 3/6 = ?", "choices": ["5/12", "5/6", "6/6", "1/6"], "answer": 1, "hint": "Same bottom, add tops." },
+        { "q": "1/3 + 1/3 = ?", "choices": ["2/3", "2/6", "1/6", "1/3"], "answer": 0, "hint": "1+1 = 2." },
+        { "q": "5/9 + 2/9 + 1/9 = ?", "choices": ["8/27", "8/9", "8/3", "7/9"], "answer": 1, "hint": "Add all tops: 5+2+1." }
+      ]
+    },
+    {
+      "day": 9,
+      "concept": {
+        "title": "Subtracting same denominator",
+        "body": "Same bottom? Subtract the tops. Bottom doesn't change.",
+        "visual": "subtraction",
+        "visualNote": "5/8 - 2/8 = 3/8"
+      },
+      "problems": [
+        { "q": "4/5 - 1/5 = ?", "choices": ["3/0", "3/5", "5/3", "1/5"], "answer": 1, "hint": "Subtract tops." },
+        { "q": "7/10 - 3/10 = ?", "choices": ["4/0", "4/10", "10/4", "1/10"], "answer": 1, "hint": "7-3 = 4." },
+        { "q": "9/12 - 5/12 = ?", "choices": ["4/12", "4/0", "5/12", "14/12"], "answer": 0, "hint": "Same bottom, subtract tops." },
+        { "q": "6/8 - 6/8 = ?", "choices": ["0/8", "12/8", "1", "8/0"], "answer": 0, "hint": "Same minus same = 0." },
+        { "q": "1 - 3/5 = ?", "choices": ["2/5", "3/5", "5/5", "1/5"], "answer": 0, "hint": "1 = 5/5. Then 5/5 - 3/5." }
+      ]
+    },
+    {
+      "day": 10,
+      "concept": {
+        "title": "Fractions of a group",
+        "body": "Fractions don't only describe shapes. They describe groups too. 1/2 of 10 cookies = 5 cookies.",
+        "visual": "group",
+        "visualNote": "10 dots, 5 highlighted"
+      },
+      "problems": [
+        { "q": "What is 1/2 of 8?", "choices": ["2", "4", "6", "8"], "answer": 1, "hint": "Divide 8 by 2." },
+        { "q": "1/3 of 9 = ?", "choices": ["1", "3", "6", "9"], "answer": 1, "hint": "Divide 9 by 3." },
+        { "q": "1/4 of 12 = ?", "choices": ["2", "3", "4", "6"], "answer": 1, "hint": "Divide 12 by 4." },
+        { "q": "2/3 of 9 = ?", "choices": ["3", "6", "9", "2"], "answer": 1, "hint": "1/3 of 9 = 3. Two of those = 6." },
+        { "q": "3/4 of 20 = ?", "choices": ["5", "10", "15", "20"], "answer": 2, "hint": "1/4 of 20 = 5. Three of those." }
+      ]
+    },
+    {
+      "day": 11,
+      "concept": {
+        "title": "Decimals and fractions",
+        "body": "Decimals are another way to write fractions. 0.5 = 1/2. 0.25 = 1/4.",
+        "visual": "decimal",
+        "visualNote": "0.5 = 1/2 with a bar split in half"
+      },
+      "problems": [
+        { "q": "0.5 = ?", "choices": ["1/2", "1/5", "5", "1/10"], "answer": 0, "hint": "Half." },
+        { "q": "1/4 as a decimal?", "choices": ["0.4", "0.25", "0.5", "0.75"], "answer": 1, "hint": "1 ÷ 4 = 0.25." },
+        { "q": "0.75 = ?", "choices": ["1/2", "1/4", "3/4", "7/5"], "answer": 2, "hint": "Three quarters." },
+        { "q": "Which is bigger: 0.6 or 1/2?", "choices": ["0.6", "1/2", "Same", "Cannot tell"], "answer": 0, "hint": "1/2 = 0.5." },
+        { "q": "1/10 as a decimal?", "choices": ["0.01", "0.1", "1.0", "0.10"], "answer": 1, "hint": "One tenth." }
+      ]
+    },
+    {
+      "day": 12,
+      "concept": {
+        "title": "Word problems with fractions",
+        "body": "Fractions show up in real life. Read carefully. What is whole? What is the part?",
+        "visual": "story",
+        "visualNote": "story image"
+      },
+      "problems": [
+        { "q": "Maya ate 2/8 of a pizza. Lin ate 3/8. How much did they eat together?", "choices": ["5/16", "5/8", "1", "1/8"], "answer": 1, "hint": "Add the tops." },
+        { "q": "A bottle has 1 liter. You drink 3/4 of it. How much is left?", "choices": ["3/4 L", "1/4 L", "1/2 L", "0 L"], "answer": 1, "hint": "Whole minus part." },
+        { "q": "There are 12 marbles. 1/3 are red. How many red?", "choices": ["3", "4", "6", "12"], "answer": 1, "hint": "12 ÷ 3." },
+        { "q": "A class has 20 kids. 1/2 are girls. How many girls?", "choices": ["5", "10", "15", "20"], "answer": 1, "hint": "Half of 20." },
+        { "q": "You walked 2/5 of a mile, then 1/5 more. How far total?", "choices": ["3/10 mi", "3/5 mi", "1 mi", "2/25 mi"], "answer": 1, "hint": "Same bottom — add tops." }
+      ]
+    },
+    {
+      "day": 13,
+      "concept": {
+        "title": "Simplifying fractions",
+        "body": "Sometimes a fraction can be written with smaller numbers but mean the same. 4/8 simplifies to 1/2.",
+        "visual": "simplify",
+        "visualNote": "4/8 → 2/4 → 1/2"
+      },
+      "problems": [
+        { "q": "Simplify 2/4", "choices": ["1/2", "2/2", "1/4", "4/2"], "answer": 0, "hint": "Divide top and bottom by 2." },
+        { "q": "Simplify 6/9", "choices": ["1/3", "2/3", "3/9", "6/3"], "answer": 1, "hint": "Divide by 3." },
+        { "q": "Simplify 4/10", "choices": ["1/4", "2/5", "4/5", "1/10"], "answer": 1, "hint": "Divide both by 2." },
+        { "q": "Which is already in simplest form?", "choices": ["2/4", "3/6", "5/7", "4/8"], "answer": 2, "hint": "5 and 7 share no common factor." },
+        { "q": "Simplify 12/16", "choices": ["1/2", "3/4", "6/8", "4/16"], "answer": 1, "hint": "Divide by 4." }
+      ]
+    },
+    {
+      "day": 14,
+      "concept": {
+        "title": "You did it",
+        "body": "You finished 14 days of fractions. You can compare them, add them, and find them in the world.",
+        "visual": "done",
+        "visualNote": "checkmark"
+      },
+      "problems": [
+        { "q": "Review: 1/2 of 10 = ?", "choices": ["2", "5", "8", "10"], "answer": 1, "hint": "Half of 10." },
+        { "q": "Review: 2/5 + 1/5 = ?", "choices": ["3/10", "3/5", "1", "1/5"], "answer": 1, "hint": "Same bottom." },
+        { "q": "Review: Which is bigger, 1/4 or 1/3?", "choices": ["1/4", "1/3", "Same", "Cannot tell"], "answer": 1, "hint": "Smaller bottom." },
+        { "q": "Review: 0.25 = ?", "choices": ["1/2", "1/3", "1/4", "1/5"], "answer": 2, "hint": "One quarter." },
+        { "q": "Review: 3/4 - 1/4 = ?", "choices": ["1/4", "2/4", "4/4", "1/2"], "answer": 1, "hint": "3-1 = 2." }
+      ]
+    }
+  ]
+}
