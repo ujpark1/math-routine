@@ -37,6 +37,7 @@ export default function ConceptScreen({ params }: { params: Params }) {
         variant="default"
         onClick={() => router.push(`/day/${day.day}/q/0`)}
         autoFocus
+        className="w-full"
       >
         이해했어요
       </Button>

@@ -36,13 +36,13 @@ export default function StartScreen() {
         {completedToday ? (
           <>
             <p className="text-body text-center text-ink-soft">오늘은 완료했어. 내일 또 봐.</p>
-            <Button variant="outline" size="lg" disabled>
+            <Button variant="outline" size="lg" disabled className="w-full">
               완료
             </Button>
           </>
         ) : (
           <Link href={`/day/${day}/concept`} className="contents">
-            <Button variant="default" size="lg" autoFocus>
+            <Button variant="default" size="lg" autoFocus className="w-full">
               시작하기
             </Button>
           </Link>

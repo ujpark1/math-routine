@@ -53,7 +53,7 @@ export default function ParentSummary() {
       </section>
 
       <Link href="/" className="contents">
-        <Button variant="outline" size="lg">
+        <Button variant="outline" size="lg" className="w-full">
           홈으로
         </Button>
       </Link>
