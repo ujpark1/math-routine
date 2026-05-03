@@ -57,13 +57,13 @@ export default function QuestionScreen({ params }: { params: Params }) {
   }
 
   return (
-    <main className="container max-w-[480px] min-h-screen flex flex-col justify-between py-12">
+    <main className="container max-w-[480px] py-12 space-y-10">
       <header className="space-y-3">
-        <p className="text-small text-text-subtle">Day {day.day} · Question {idxNum + 1} of {day.problems.length}</p>
+        <p className="text-small text-ink-soft">Day {day.day} · Question {idxNum + 1} of {day.problems.length}</p>
         <ProgressDots total={day.problems.length} current={idxNum} />
       </header>
 
-      <section className="my-12 space-y-6">
+      <section className="space-y-6">
         <Card>
           <p className="text-body">{problem.q}</p>
         </Card>
@@ -84,9 +84,9 @@ export default function QuestionScreen({ params }: { params: Params }) {
                   "min-h-[44px] rounded-lg border px-4 py-3 text-left text-body transition-colors",
                   "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2",
                   "disabled:cursor-not-allowed",
-                  isThisAnswer ? "border-accent bg-accent/10 text-text" :
-                  isThisWrong ? "border-wrong bg-wrong/5 text-text" :
-                  "border-border bg-bg hover:bg-bg-subtle",
+                  isThisAnswer ? "border-accent bg-accent/10 text-ink" :
+                  isThisWrong ? "border-wrong bg-wrong/5 text-ink" :
+                  "border-line bg-surface hover:bg-surface-soft",
                 ].join(" ")}
               >
                 {c}
@@ -97,7 +97,7 @@ export default function QuestionScreen({ params }: { params: Params }) {
 
         {showHint && !isCorrect && (
           <Card className="border-warn/40 bg-warn/5">
-            <p className="text-body text-text">
+            <p className="text-body text-ink">
               <span className="font-semibold text-warn">힌트.</span> {problem.hint}
             </p>
           </Card>

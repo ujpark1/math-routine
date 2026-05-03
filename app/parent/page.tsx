@@ -17,36 +17,36 @@ export default function ParentSummary() {
   const accuracy = totalQs ? Math.round((totalCorrect / totalQs) * 100) : 0;
 
   return (
-    <main className="container max-w-[480px] min-h-screen flex flex-col justify-between py-12">
+    <main className="container max-w-[480px] py-12 space-y-10">
       <header className="space-y-2">
-        <p className="text-small text-text-subtle">Parent summary</p>
+        <p className="text-small text-ink-soft">Parent summary</p>
         <h1 className="text-display">최근 7일</h1>
       </header>
 
-      <section className="space-y-4 my-12">
+      <section className="space-y-4">
         <Card>
           <div className="space-y-3">
             <div className="flex justify-between">
-              <span className="text-text-subtle">완료 일수</span>
+              <span className="text-ink-soft">완료 일수</span>
               <span className="tabular-nums">{last7.length}/7</span>
             </div>
             <div className="flex justify-between">
-              <span className="text-text-subtle">정답률</span>
+              <span className="text-ink-soft">정답률</span>
               <span className="tabular-nums">{accuracy}%</span>
             </div>
             <div className="flex justify-between">
-              <span className="text-text-subtle">현재 연속</span>
+              <span className="text-ink-soft">현재 연속</span>
               <span className="tabular-nums">{p.streak}일</span>
             </div>
             <div className="flex justify-between">
-              <span className="text-text-subtle">진도</span>
+              <span className="text-ink-soft">진도</span>
               <span className="tabular-nums">Day {Math.min(p.currentDay, 14)} / 14</span>
             </div>
           </div>
         </Card>
 
         {last7.length === 0 && (
-          <p className="text-small text-text-subtle text-center">
+          <p className="text-small text-ink-soft text-center">
             기록 없음. 첫 미션을 끝내면 여기 표시돼.
           </p>
         )}

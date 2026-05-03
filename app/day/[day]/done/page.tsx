@@ -35,16 +35,16 @@ export default function DoneScreen({ params }: { params: Params }) {
   const isFinal = dayNum === 14;
 
   return (
-    <main className="container max-w-[480px] min-h-screen flex flex-col justify-between py-12">
+    <main className="container max-w-[480px] py-12 space-y-10">
       <header className="space-y-2">
-        <p className="text-small text-text-subtle">Day {day.day} · Done</p>
+        <p className="text-small text-ink-soft">Day {day.day} · Done</p>
         <h1 className="text-display">{isFinal ? "다 했어." : "오늘 끝."}</h1>
-        <p className="text-body text-text-subtle">
+        <p className="text-body text-ink-soft">
           {isFinal ? "14일 분수 단원을 마쳤어." : "내일 또 봐."}
         </p>
       </header>
 
-      <section className="my-12">
+      <section >
         <Card className="text-center space-y-4">
           {streak > 1 && (
             <p className="text-body">

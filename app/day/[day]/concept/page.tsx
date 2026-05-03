@@ -19,13 +19,13 @@ export default function ConceptScreen({ params }: { params: Params }) {
   }
 
   return (
-    <main className="container max-w-[480px] min-h-screen flex flex-col justify-between py-12">
+    <main className="container max-w-[480px] py-12 space-y-10">
       <header className="space-y-2">
-        <p className="text-small text-text-subtle">Day {day.day} · Concept</p>
+        <p className="text-small text-ink-soft">Day {day.day} · Concept</p>
         <h1 className="text-h1">{day.concept.title}</h1>
       </header>
 
-      <section className="flex-1 flex items-center justify-center my-12">
+      <section className="flex items-center justify-center py-4">
         <Card className="w-full text-center space-y-6">
           <FractionVisual kind={day.concept.visual} note={day.concept.visualNote} />
           <p className="text-body">{day.concept.body}</p>
@@ -73,7 +73,7 @@ function FractionVisual({ kind, note }: { kind: string; note: string }) {
   return (
     <div className="text-display tabular-nums" aria-label={note}>
       <span className="block">3</span>
-      <span className="block w-12 mx-auto h-[2px] bg-text my-1" />
+      <span className="block w-12 mx-auto h-[2px] bg-ink my-1" />
       <span className="block">4</span>
     </div>
   );

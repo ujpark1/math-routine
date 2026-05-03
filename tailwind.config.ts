@@ -7,10 +7,10 @@ const config: Config = {
     container: { center: true, padding: "1rem", screens: { "2xl": "480px" } },
     extend: {
       colors: {
-        // BRAND-DNA tokens (light default)
-        bg: { DEFAULT: "hsl(var(--bg))", subtle: "hsl(var(--bg-subtle))" },
-        border: "hsl(var(--border))",
-        text: { DEFAULT: "hsl(var(--text))", subtle: "hsl(var(--text-subtle))" },
+        // BRAND-DNA tokens — renamed to avoid Tailwind prefix conflicts
+        surface: { DEFAULT: "hsl(var(--bg))", soft: "hsl(var(--bg-subtle))" },
+        line: "hsl(var(--border))",
+        ink: { DEFAULT: "hsl(var(--text))", soft: "hsl(var(--text-subtle))" },
         accent: "hsl(var(--accent))",
         warn: "hsl(var(--warn))",
         wrong: "hsl(var(--wrong))",
